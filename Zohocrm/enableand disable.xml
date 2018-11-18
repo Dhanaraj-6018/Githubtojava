@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Preserve order test runs" parallel="classes" thread-count="2">
+  <test name="Regression 1" preserve-order="true">
+      <classes>
+      <class name="com.dataprovider.Dependsonmethodexample"/>
+      <class name="com.dataprovider.Enableanddisable"/>
+    </classes>
+  </test>
+</suite>
